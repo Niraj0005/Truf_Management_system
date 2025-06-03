@@ -1,0 +1,79 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f5;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #18B8DC;
+    overflow: hidden;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+    .navbar img {
+        height: 100px;
+        width: auto;
+    }
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.dashboard-title {
+    text-align: center;
+    background-color: #18B8DC;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+    /* Top cards: Users, Turfs, Bookings */
+    .dashboard-cards.top-cards {
+        margin-top: 20px;
+    }
+
+/* Standard card */
+.card {
+    background-color: #F0F4F3;
+    color: #333;
+    width: 220px;
+    height: 120px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+    /* Larger card for Recent Bookings */
+    .card.recent-bookings {
+        width: 700px;
+        height: 150px;
+        background-color: #d1f0ff;
+        font-size: 22px;
+        color: #00394d;
+        margin-top: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+

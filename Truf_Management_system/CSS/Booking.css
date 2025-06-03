@@ -1,0 +1,170 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6f3ff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #00bfff;
+    padding: 10px 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    /* Logo container */
+}
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+
+.nav-items {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+    .nav-item.Booking {
+        background: white;
+        color: #00bfff;
+        border-radius: 4px;
+    }
+
+.title {
+    background: #00bfff;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tab-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background: white;
+    border: 2px solid #00bfff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.booking-form {
+    background: white;
+    border: 2px solid #00bfff;
+    border-radius: 5px;
+    padding: 25px;
+    width: 300px;
+}
+
+    .booking-form h3 {
+        background: #00bfff;
+        color: white;
+        padding: 10px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .booking-form label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    .booking-form input,
+    .booking-form select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+    }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.save, .cancel {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.save {
+    background: #00bfff;
+}
+
+.cancel {
+    background: #00bfff;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booking-form {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+
+    .nav-item {
+        width: fit-content;
+        margin-bottom: 5px;
+    }
+}

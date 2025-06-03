@@ -1,0 +1,112 @@
+﻿/* Main Wrapper */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(to bottom right, #E0F7FA, #F0F4F3);
+    min-height: 100vh;
+}
+
+/* Main Form Container */
+.form-container {
+    background-color: #ffffff;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 0 30px 30px 30px;
+}
+
+/* ✅ Header Row */
+.form-header {
+    background-color: #18B8DC;
+    padding: 20px 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.header-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Error Label */
+.error-message {
+    display: block;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+/* Input Fields */
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box {
+    padding: 14px 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+    .input-box:focus {
+        border-color: #18B8DC;
+        box-shadow: 0 0 8px rgba(24, 184, 220, 0.3);
+        outline: none;
+    }
+
+/* Button Styling */
+.btn-register {
+    background-color: #18B8DC;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-register:hover {
+        background-color: #1285a0;
+    }
+.login-redirect {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+    .login-redirect a {
+        color: #4F7C82;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .login-redirect a:hover {
+            text-decoration: underline;
+        }
